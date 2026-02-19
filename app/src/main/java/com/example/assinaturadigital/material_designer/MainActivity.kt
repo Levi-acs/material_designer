@@ -17,9 +17,18 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun insertListener() {
-
         binding.cvButtons.setOnClickListener {
             startActivity(ButtonsActivity.createIntent(this))
         }
+        binding.cvTextFields.setOnClickListener {
+            startActivity(TextFieldsActivity.createIntent(this))
+        }
+        binding.cvBottomSheets.setOnClickListener {
+            ModalBottomSheet.start(supportFragmentManager)
+        }
+        binding.cvTopAppBar.setOnClickListener {
+            startActivity(TopAppBarActivity.createIntent(this))
+        }
+
     }
 }

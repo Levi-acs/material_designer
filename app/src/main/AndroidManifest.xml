@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ButtonsActivity" />
+        <activity android:name="com.example.assinaturadigital.material_designer.TextFieldsActivity" />
     </application>
 
 </manifest>
